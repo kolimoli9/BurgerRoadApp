@@ -32,7 +32,7 @@ const RegisterScreen = ({ navigation }) => {
         email:email,
        })
       const config={headers:{'Content-Type':'application/json'}}
-    axios.post('http://10.0.0.12:8000/register/',data,config).then((response)=>{
+    axios.post('http://censored/register/',data,config).then((response)=>{
         console.log(response.status)
         let user = response.data
         storage.save({

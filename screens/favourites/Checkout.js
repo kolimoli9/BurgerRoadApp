@@ -93,7 +93,7 @@ const finishUp = async()=>{
             total : total
         }
         let config = {headers:{'Content-Type':'application/json'}}
-       await axios.post('http://10.0.0.12:8000/order/',data,config).then((response)=>{
+       await axios.post('http://censored/order/',data,config).then((response)=>{
         if(response.status==200){
             Alert.alert('Your Order Has Been Placed !','It would take a couple of minutes...')
             storage.remove({key:'order'})

@@ -20,7 +20,7 @@ const getUserData=async()=>{
         setUserId(ret.userid)
     });
     let value = parseInt(UserId.userid)
-    axios.get(`http://10.0.0.12:8000/getUserData/${value}`,config).then((response)=>{
+    axios.get(`http://censored/getUserData/${value}`,config).then((response)=>{
         let user = response.data
         console.log('all the user data',user)
         storage.save({

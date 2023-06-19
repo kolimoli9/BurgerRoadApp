@@ -51,7 +51,7 @@ const sendPhone=async()=>{
     }
     console.log(userID)
     let id = parseInt(userID.userid)
-    axios.post(`http://10.0.0.12:8000/verifyPhone/${id}`,data,config).then((response)=>{
+    axios.post(`http://censored/verifyPhone/${id}`,data,config).then((response)=>{
         if(response.status==200){
             navigation.push('Verification')
         }else{

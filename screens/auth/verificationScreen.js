@@ -54,7 +54,7 @@ const validate=async()=>{
     let code = firstDigit+secondDigit+thirdDigit+forthDigit
     let data={'code':code}
     let config = {headers:{'Content-Type':'application/json'}}
-    axios.post('http://10.0.0.12:8000/verify/',data,config).then((response)=>{
+    axios.post('http://censored/verify/',data,config).then((response)=>{
         if(response.status==200){
             navigation.navigate('BottomTabBar')
         }else{
